@@ -1,35 +1,272 @@
-body {
-    background-color: rgb(209, 54, 54);
-    font-family: Arial;
+/*Os containers do layout devem ser posicionados com uso dos métodos CSS de posicionamento. Para isso vamos definir regras de estilo no arquivo style.css. Depois que os containers forem posicionados voltaremos ao arquivo da folha de estilo para acresentar mais regras CSS.*/
+
+/*Global Styles */
+body  {  	
+	margin: 0;  	
+	padding: 0;  
+    font-family: 'Shadows Into Light Two', cursive;
+	text-align: center;
+    background-image: url(./header.jpeg);
+    opacity: 0.3;
+    background-repeat:initial;
+	} 
+    
+a:link { color: #302f2e; } /*Define a cor de todos que sao links*/
+a:visited { color: #b9115f; }/*Apos o link ser visitado ele muda de cor*/
+a:focus { color: #000; }
+a:hover { color: #ffffff; }/*Altera a cor do link com mouse em cima*/
+a:active { color: rgb(0, 162, 255); }
+h1, h2, h3, h4, h5, h6 { margin: 0 0 .5em; }
+
+
+
+h2 a { text-decoration: none; }
+
+
+
+    /* container styles */
+#container  {  	
+	margin: 1em auto;  	
+	width:100%;  	
+	background:none; 
+    text-align: left;
+	border: 1px solid blue; 
+    margin-top: 0px;
+    /*mainnav styles */
+    
+	}    #mainnav {
+        padding: 2px 0;
+        margin-bottom: 15px;
+        margin-top: 0px;
+       
+        border: 1px solid blue; 
+     }
+     #mainnav ul {
+        margin: 0 0 0 20px;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+        
+        }
+    
+    #mainnav li {
+        display: inline;
+        padding: 0 50px;/*Espaco entre as palavras de cada linha*/
+        color: #272900;
+        font-size: 25px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        border: 1px solid blue; 
+    
+        }
+    
+    #mainnav li a {
+        text-decoration: none;
+        color: #272900;
+        }
+    
+    #mainnav li a:hover {
+        text-decoration: none;
+        color: #fff;
+        background-color: #001a29; /*Quando passa o Mouse ele muda a cor de fundo*/
+        }
+    
+    
+
+/* header styles */
+#header {
+	height: 70px;
+	width: 100%;
+	position: relative;
+	background: none;
+    border: 1px solid blue; 
+    
+	
+
+	} 
+
+ #header h1 {
+        
+        text-align: center;
+        font-size: 50px;
+        }
+
+        /*
+
+    /* menu styles */
+    
+#menu  {  	
+	float: right;  	
+	width: 200px;  	
+	background:white;
+    opacity : 0.5 ;
+    border-left: 1px solid #C5C877;
+	padding-left: 15px;
+    height: 500px;
+    border: 1px solid blue; 
+    margin-right: 40px;
+ 
+
+	} 
+ #menu h3{
+        text-align: center;
+        margin: 2em 0;
+        padding: 0;
+        color: blueviolet;
+        font-weight: bold;
+        font-size: 30px;
+    }
+#menu ul {
+        margin: 5em 0;
+        padding: 0;
+        
+        }
+ #menu ul a{
+            margin: 5em 0;
+            padding: 0;
+            text-decoration: none;
+
+            
+            }
+    
+#menu ul li {
+        margin: 0 0 1em;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+        
+        
+        }
+
+/* contents styles */
+
+#contents  {  	
+	float: center;  	
+	width: 700px;
+    height: 500px;  	
+	background:white,1;  	
+	margin: 0 10px 10px 30px;  
+    border: 1px solid blue; 
+ 
+
+	}   
+ #contents h2{
+     text-align: center;
+     font-size: 40px;
+     color: black;
+    
+
+ }   
+
+ #contents h3{
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90vh;
-    justify-content: center;
-  }
-  
-  h1 {
-    font-size: 72px;
-  }
-  
-  p {
-    font-size: 28px;
-  }
-  
-  button {
-      color: white;
-      font-size: 125%;
-      border-radius: 4px;
-      border: none;
-      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-      background: rgb(28, 184, 65);
-      padding: 10px;
-      outline: none;
-      cursor: pointer;
-  }
-  
-  button:hover {
-    background: rgb(66, 184, 221);
-    padding: 12px;
-  }
+    font-size: 25px;
+    color: black;
+ }
+    
+#contents p { 
+    line-height: 200%;
+    margin-top: 2px;
+
+
+}
+.blogentry { border: rgb(111, 108, 108) }
+
+.blogentry ul {
+	text-align: right;
+	margin: 1em 0;
+	padding: 0;
+	font-size: 95%;
+	}
+
+.blogentry li {
+	list-style-type: none;
+	display: inline;
+	margin: 0;
+	padding: 0 0 0 7px;
+		}
+
+.imagefloat {
+	float: center;
+	padding: 2px;
+	border: 1px solid #020202;
+	margin: 0 20px 10px 70px;
+    width: 200px;
+	}
+
+/* footer styles */
+#footer  {  	
+	clear: both;
+	color: #272900;
+	text-align: center;
+	font-size: 90%;
+	background:none;
+	padding: 5px; 
+    border: 1px solid blue; 
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**SOBRE TRANSPARENCIAS: Quando a primeira DIV possui um posicionamento relativo 
+devemos saber que é para pôr o z-index.
+
+A DIV, que permite a transparência, possui um posicionamento absoluto e 
+está a 0 px de cada borda para cobrir a primeira DIV. 
+Vemos uma z-index de -1 para coloca-la abaixo da primeira.**/
+
+/**CRIAR IMAGEM COM FUNDO TRANSPARENTE NO PAINT : 
+https://br.ccm.net/faq/33149-como-obter-um-fundo-transparente-com-o-paint-no-windows**/
+
+/** DIVERSAS PROPRIEDADES NO CSS:
+ https://br.ccm.net/faq/6126-as-diversas-propriedades-em-css3**/
+
+/* @font-face {
+     src:url(./Shadows_Into_Light_Two/);
+     font-family: 'Shadows Into Light Two', cursive;
+    /*Importar fonte do Google Fonts: 
+    1- Faz o download da fonte/
+    2- Extrair o arquivo na pasta so arquivo
+    3-Colar o codigo: 
+
+    @font-face {
+     src:url(./Homemade_Apple/);
+    font-family: 'Homemade Apple', cursive;
+    }
+
+    4-Utilizar o font-family no local desejado,*
+    ou
+    Basta Copiar o link e colar no html*/
+
+   
